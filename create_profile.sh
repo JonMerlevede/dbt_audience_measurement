@@ -20,6 +20,7 @@ do
 done
 # End reading password
 
+mkdir /home/gitpod/.dbt/
 echo "audience_measurement:
   outputs:
     dev:

@@ -33,5 +33,19 @@ echo "audience_measurement:
       type: snowflake
       user: $user
       warehouse: COMPUTE_WH
+  target: dev
+  
+covid19:
+  outputs:
+    dev:
+      account: yw41113.eu-west-1
+      database: WINTERSCHOOL
+      password: $password
+      role: student
+      schema: $schema
+      threads: 1
+      type: snowflake
+      user: $user
+      warehouse: COMPUTE_WH
   target: dev" > /home/gitpod/.dbt/profiles.yml
 

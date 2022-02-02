@@ -13,7 +13,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/* && \
     pip install dbt-snowflake
-#    alias dbt docs serve="dbt docs serve --no-browser"
+
 # Copy exercices content into the image
 # COPY --chown=gitpod content/ /home/gitpod/dbt_audiance_measurment
 

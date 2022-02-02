@@ -6,6 +6,6 @@ checkoutLocation: '.'
 #    before: |
 #      rm -rfv ./{*,.*}
 #      sudo mv /home/gitpod/dbt_audiance_measurment/* .
-ports:
-  - port: 8080
-    onOpen: open-browser
+# ports:
+#  - port: 8080
+#    onOpen: open-browser

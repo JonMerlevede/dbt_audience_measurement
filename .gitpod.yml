@@ -1,6 +1,6 @@
 image:
   file: .gitpod.Dockerfile
-checkoutLocation: '.'
+#checkoutLocation: '.'
 #tasks:
 #  - name: Clean root and grab useful exercises.
 #    before: |

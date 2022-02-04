@@ -4,17 +4,14 @@ FROM gitpod/workspace-full
 # rebuild of the Gitpod environment when needed
 #ENV TRIGGER_REBUILD 0
 
-USER root
-
-RUN apt-get update && \
-    apt-get install -y wget git tree ssh nano sudo nmap man tmux curl joe && \
-    apt-get clean && \
-    rm -rf /var/cache/apt/* && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm -rf /tmp/* && \
-    pip install dbt-snowflake 
-
+RUN sudo apt-get update && \
+    sudo apt-get install -y wget git tree ssh nano sudo nmap man tmux curl joe && \
+    sudo apt-get clean && \
+    sudo rm -rf /var/cache/apt/* && \
+    sudo rm -rf /var/lib/apt/lists/* && \
+    sudo rm -rf /tmp/* && \
+    pip install dbt-snowflake
+     
 # Copy exercices content into the image
 # COPY --chown=gitpod content/ /home/gitpod/dbt_audiance_measurment
-
-USER gitpod
+#USER gitpod
